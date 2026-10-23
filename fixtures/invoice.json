@@ -1,0 +1,13 @@
+{
+  "query": "Which company issued this invoice, and how much must be paid?",
+  "passages": [
+    {"id": "issuer", "text": "Cedar Ridge Supplies issued invoice CR-208 on 12 October 2026."},
+    {"id": "payment", "text": "The amount due is $4,860, with payment required within 30 days."},
+    {"id": "menu", "text": "The office lunch menu is updated each Wednesday."}
+  ],
+  "vector_heads": {"query": [1.0, 0.5, 0.0], "issuer": [1.0, 0.2, 0.0], "payment": [0.6, 1.0, 0.0], "menu": [0.0, 0.0, 1.0]},
+  "scores": {"issuer": 3.2, "payment": 2.1, "menu": -8.0},
+  "answer": "Cedar Ridge Supplies issued the invoice, and the amount due is $4,860.",
+  "spans": [{"text": "Cedar Ridge Supplies", "label": "organization"}, {"text": "12 October 2026", "label": "date"}, {"text": "$4,860", "label": "amount"}],
+  "provenance": "Synthetic contract fixture; vectors, scores, answer, and token counts are hand-authored test data, not outputs from learned models."
+}

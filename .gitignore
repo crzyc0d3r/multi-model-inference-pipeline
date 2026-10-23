@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+results/
+*.log
+.repo-meta.json
